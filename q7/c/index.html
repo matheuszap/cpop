@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Aritméticas</title>
+    <script src="arith.js"></script>
+    <style>
+        #formulario {
+            font: 14px Verdana;
+            margin-left: 35%;
+            margin-top: 150px;
+        }
+
+        #tabela {
+            font: 14px Verdana;
+            margin-left: 25%;
+        }
+
+        table tr  td {
+            width: 140px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="formulario">
+        <form name="numeros" action="">
+            <label for="potencia">Potência (em Watts): </label><br>
+            <input type="number" name="potencia"/><br>
+
+            <label for="">Dias por mês: </label><br>
+            <input type="number" name="diasmes"/><br>
+
+            <label for="">Horas p/ dia: </label><br>
+            <input type="number" name="horasdia"/><br>
+
+            <label for="">Preço Hora: </label><br>
+            <input type="number" name="precohora"/><br>
+
+            <input type="button" value="Enviar" onclick="calculate(potencia.value, diasmes.value, horasdia.value, precohora.value)">
+        </form>
+    </div>
+
+    <br><br>
+
+    <div id="tabela">
+        <table id="tb">
+            <thead>
+                <tr>
+                    <td>Potência</td>
+                    <td>Dias por Mês</td>
+                    <td>Horas por Dia</td>
+                    <td>Preço Hora</td>
+                    <td>Valor Total</td>
+                    <td>Valor p/ Hora</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    
+</body>
+
+</html>

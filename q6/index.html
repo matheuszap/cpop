@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Aritméticas</title>
+    <script src="arith.js"></script>
+    <style>
+        #formulario {
+            font: 14px Verdana;
+            margin-left: 35%;
+            margin-top: 150px;
+        }
+
+        #tabela {
+            font: 14px Verdana;
+            margin-left: 25%;
+        }
+
+        table tr  td {
+            width: 140px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="formulario">
+        <form name="numeros" action="">
+            <label for="">Digite os dois números: </label><br><br>
+            <input type="number" name="n1"/><br>
+            <input type="number" name="n2"/><br><br>
+            <input type="button" value="Enviar" onclick="calculate(n1.value, n2.value)">
+        </form>
+    </div>
+
+    <br><br>
+
+    <div id="tabela">
+        <table id="tb">
+            <thead>
+                <tr>
+                    <td>Soma</td>
+                    <td>Produto</td>
+                    <td>Divisão</td>
+                    <td>Resto Divisão</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    
+</body>
+
+</html>
